@@ -1,0 +1,31 @@
+{
+	"name": "@toriyama/komoro-soba",
+	"version": "0.0.1",
+	"description": "",
+	"main": "dist/main.js",
+	"scripts": {
+
+        "debug": "rimraf output && esr src/main.ts",
+        "build": "rimraf dist && tsc",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/YUUKIToriyama/komoro-soba.git"
+	},
+	"author": "YUUKIToriyama <github@toriyama.dev>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/YUUKIToriyama/komoro-soba/issues"
+	},
+	"homepage": "https://github.com/YUUKIToriyama/komoro-soba#readme",
+		"devDependencies": {
+				"@types/jsdom": "^16.2.14",
+				"esbuild-runner": "^2.2.1",
+				"rimraf": "^3.0.2",
+				"typescript": "^4.7.4"
+		},
+		"dependencies": {
+				"jsdom": "^19.0.0"
+		}
+}
