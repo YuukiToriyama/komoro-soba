@@ -2,5 +2,6 @@
 	"compilerOptions": {
 		"outDir": "./dist",
 		"declaration": true
-	}
+	},
+	"exclude": ["jest.config.ts"]
 }

@@ -1,5 +1,6 @@
 import * as fs from "fs/promises";
 import { JSDOM } from "jsdom";
+import "./extensions/string.removeHtmlComment"
 
 interface Shop {
 	name: string;
@@ -44,7 +45,8 @@ const fetchShopListData = async () => {
 			}
 			shop.name = store
 				.getElementsByClassName("name")[0]
-				.innerHTML.replace(/<!--.*-->/, "")
+				.innerHTML
+				.removeHtmlComment()
 				.replace("<br>", "")
 				.trim();
 			const table = store.getElementsByTagName("table")[0];
@@ -63,15 +65,21 @@ const fetchShopListData = async () => {
 					shop.hours.weekdays = td
 						.getElementsByClassName("weekdays")[0]
 						.parentElement.parentElement.getElementsByTagName("td")[0]
-						.innerHTML.trim();
+						.innerHTML
+						.removeHtmlComment()
+						.trim();
 					shop.hours.saturday = td
 						.getElementsByClassName("saturday")[0]
 						.parentElement.parentElement.getElementsByTagName("td")[0]
-						.innerHTML.trim();
+						.innerHTML
+						.removeHtmlComment()
+						.trim();
 					shop.hours.sunday = td
 						.getElementsByClassName("sunday")[0]
 						.parentElement.parentElement.getElementsByTagName("td")[0]
-						.innerHTML.trim();
+						.innerHTML
+						.removeHtmlComment()
+						.trim();
 				}
 			}
 			shops.push(shop);
