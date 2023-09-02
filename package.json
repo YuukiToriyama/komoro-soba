@@ -21,9 +21,10 @@
 	"homepage": "https://github.com/YUUKIToriyama/komoro-soba#readme",
 		"devDependencies": {
 				"@types/jsdom": "^16.2.14",
-				"esbuild-runner": "^2.2.1",
-				"rimraf": "^3.0.2",
-				"typescript": "^4.7.4"
+				"@types/node": "^20.5.8",
+				"esbuild-runner": "^2.2.2",
+				"rimraf": "^5.0.1",
+				"typescript": "^5.2.2"
 		},
 		"dependencies": {
 				"jsdom": "^19.0.0"
