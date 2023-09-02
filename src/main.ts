@@ -65,15 +65,21 @@ const fetchShopListData = async () => {
 					shop.hours.weekdays = td
 						.getElementsByClassName("weekdays")[0]
 						.parentElement.parentElement.getElementsByTagName("td")[0]
-						.innerHTML.trim();
+						.innerHTML
+						.removeHtmlComment()
+						.trim();
 					shop.hours.saturday = td
 						.getElementsByClassName("saturday")[0]
 						.parentElement.parentElement.getElementsByTagName("td")[0]
-						.innerHTML.trim();
+						.innerHTML
+						.removeHtmlComment()
+						.trim();
 					shop.hours.sunday = td
 						.getElementsByClassName("sunday")[0]
 						.parentElement.parentElement.getElementsByTagName("td")[0]
-						.innerHTML.trim();
+						.innerHTML
+						.removeHtmlComment()
+						.trim();
 				}
 			}
 			shops.push(shop);
