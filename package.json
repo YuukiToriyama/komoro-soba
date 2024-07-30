@@ -10,14 +10,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/YUUKIToriyama/komoro-soba.git"
+		"url": "git+https://github.com/YuukiToriyama/komoro-soba.git"
 	},
-	"author": "YUUKIToriyama <github@toriyama.dev>",
+	"author": "YuukiToriyama <github@toriyama.dev>",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/YUUKIToriyama/komoro-soba/issues"
+		"url": "https://github.com/YuukiToriyama/komoro-soba/issues"
 	},
-	"homepage": "https://github.com/YUUKIToriyama/komoro-soba#readme",
+	"homepage": "https://github.com/YuukiToriyama/komoro-soba#readme",
 	"devDependencies": {
 		"@types/jest": "^29.5.4",
 		"@types/jsdom": "^21.1.2",
