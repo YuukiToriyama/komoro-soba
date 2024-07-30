@@ -6,6 +6,6 @@
 	"hours": {
 		"weekdays": "7:00 ～ 21:00",
 		"saturday": "7:00 ～ 16:00",
-		"sunday": "8:00 ～ 15:00"
+		"sunday": "休日"
 	}
 }
